@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactenos</title>
+    <link rel="stylesheet" href="../css/contacto.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="author" content="Maikel Gomez Murillo" />
+    <link rel="icon" href="../img-proyecto/brandPage.png" />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/034e47a9fa.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-transparent w-100 d-flex"
+      >
+        <div class="container-fluid contenedor-header">
+          <img
+            src="../img-proyecto/brandHeader.png"
+            alt=""
+            class="navbar-brand fw-bold mx-auto logo-inicial"
+          />
+
+          <button
+            class="navbar-toggler border-0 position-absolute"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars lead"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mx-auto">
+              <li class="nav-item d-flex justify-content-center">
+                <a
+                  class="nav-link align-self-center"
+                  aria-current="page"
+                  href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item d-flex justify-content-center">
+                <a
+                  class="nav-link align-self-center"
+                  href="../html/nosotros.html"
+                  >Nosotros</a
+                >
+              </li>
+              <li class="nav-item d-flex justify-content-center">
+                <img
+                  src="../img-proyecto/brandHeader.png"
+                  alt=""
+                  class="navbar-brand fw-bold mx-auto logo-dos"
+                />
+              </li>
+              <li class="nav-item d-flex justify-content-center">
+                <a
+                  class="nav-link align-self-center"
+                  href="../html/productos.html"
+                  >Productos</a
+                >
+              </li>
+              <li class="nav-item d-flex justify-content-center">
+                <a
+                  class="nav-link align-self-center"
+                  href="../html/contacto.html"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Contacto -->
+    <img src="../img-proyecto/line1.png" alt="" class="line-first" />
+    <section class="contacto">
+      <div class="contenido">
+        <div class="encabezado">
+          <h1>Contáctenos</h1>
+          <small
+            >Tres Marías es la más creativa, con un equipo que nunca duerme.
+            Escríbenos y con gusto lo ayudaremos.</small
+          >
+        </div>
+        <div>
+          <form class="contact-form box-shadow-1">
+            <input
+              class="border-bajo"
+              type="text"
+              name="name"
+              placeholder="Ingresa tu nombre *"
+              title="Nombre sólo acepta letras y espacios en blanco"
+              pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+              required
+            />
+            <input
+              class="border-bajo"
+              type="email"
+              name="email"
+              placeholder="Ingresa tu correo *"
+              title="Email incorrecto"
+              pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+              required
+            />
+            <textarea
+              name="comments"
+              cols="50"
+              rows="10"
+              placeholder="Déjame tus comentarios *"
+              required
+            ></textarea>
+            <div class="contact-form-loader text-center none">
+              <img
+                src="../assets/loader.svg"
+                alt="Enviando..."
+                class="loader"
+              />
+            </div>
+            <input
+              class="btn-submit submit text-white text-center"
+              id="btn-enviar"
+              type="submit"
+              value="ENVIAR MENSAJE"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <article id="gracias" class="ventana-modal">
+      <div class="modal-contenido">
+        <article class="contact-form-response">
+          <h3>
+            ¡Muchas Gracias!
+            <br />
+            Por tus comentarios
+          </h3>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path d="M12,18c4,0,5-4,5-4H7C7,14,8,18,12,18z" />
+            <path
+              d="M12,2C6.486,2,2,6.486,2,12c0,5.514,4.486,10,10,10s10-4.486,10-10C22,6.486,17.514,2,12,2z M12,20c-4.411,0-8-3.589-8-8 s3.589-8,8-8s8,3.589,8,8S16.411,20,12,20z"
+            />
+            <path
+              d="M13 12l2 .012C15.012 11.55 15.194 11 16 11s.988.55 1 1h2c0-1.206-.799-3-3-3S13 10.794 13 12zM8 11c.806 0 .988.55 1 1h2c0-1.206-.799-3-3-3s-3 1.794-3 3l2 .012C7.012 11.55 7.194 11 8 11z"
+            />
+          </svg>
+        </article>
+      </div>
+    </article>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="contenedor-footer">
+        <h3>Contacto</h3>
+        <div class="d-flex align-self-center">
+          <div>
+            <i class="fa-solid fa-phone-flip"></i>
+            <i class="">506+ 2447 6672</i>
+          </div>
+        </div>
+        <div class="d-flex align-self-center">
+          <div>
+            <!--             <p class="direccion-footer"> -->
+            <i class="fa-solid fa-location-crosshairs"></i>
+            <i
+              >Plantel Municipal, 250 mts norteste frente a la primer entrada de
+              Copan,San Ramón</i
+            >
+            <!--             </p> -->
+          </div>
+        </div>
+        <div class="d-flex align-self-center">
+          <div>
+            <i class="fa-solid fa-envelope"></i>
+            <i class="">panaderiatresmarias@gmail.com</i>
+          </div>
+        </div>
+
+        <img
+          src="../img-proyecto/brandFooter.png"
+          alt=""
+          class="brand-footer panadería tres marías"
+        />
+        <credit>
+          <small
+            >&copy;2022 Todos los derechos reservados. Desarrollo web
+            <a href="./autor.html" target="_blank">
+              Maikel Gómez Murillo.</a
+            ></small
+          >
+        </credit>
+      </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/ffec4ec2ed.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
