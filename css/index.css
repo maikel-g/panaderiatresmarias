@@ -1,0 +1,642 @@
+/* ******** Custom Properties ******** */
+@import url(./styles.css);
+/* ******** Components ******** */
+
+/* ******** Utilities ******** */
+
+/* ******** Site Style ******** */
+
+/* ==========Inicio============= */
+
+.hero-image {
+  /* background-image: url("../img-proyecto/heroImageExtraSmall.png"); */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.contenedor-texto {
+  background-image: url("../img-proyecto/heroImageExtraSmall.png");
+  background-repeat: no-repeat;
+
+  background-size: auto;
+}
+
+/*  */
+.hero-image-opacity {
+  width: 100%;
+  text-align: center;
+  /* min-height: 26.5rem; */
+
+  /*   display: grid;
+  grid-template-areas:
+    "imagen texto"
+    "imagen texto";
+  grid-template-rows: 1fr;
+  grid-template-columns: 38% 1fr !important; */
+}
+
+.contenedor-logo {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    #c59d62;
+  background-image: url(../img-proyecto/heroBread.png);
+  grid-area: imagen;
+  /*   display: flex;
+  justify-content: center;
+  align-items: center; */
+  height: 240px;
+}
+.heroImageComponent {
+  width: 12rem;
+  text-align: center;
+  text-align: center !important;
+  padding-bottom: 1.6rem !important;
+}
+
+.contenedor-texto {
+  grid-area: texto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 240px;
+}
+
+.hero-image-title {
+  /* width: 250px; */
+  font-size: 2.7rem;
+  color: var(--white);
+  font-family: var(--font_Cursiva);
+  text-align: center !important;
+  margin: 0 !important;
+}
+
+#inicio {
+  position: relative;
+}
+
+/* ==========Quienes somos============= */
+.quienes-somos {
+  margin: 0 1rem;
+}
+.quienes-somos h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.quienes-somos p {
+  text-align: center;
+}
+
+/* ==========Servicios============= */
+.servicios {
+  margin: 0 1rem;
+  text-align: center;
+}
+.servicios h2 {
+  margin-bottom: 1rem;
+}
+.servicios h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.15rem;
+}
+
+.check {
+  width: 11.25rem;
+  height: 10.938rem;
+  margin-bottom: 1rem;
+}
+
+.yellow-line64 {
+  margin: 0 0 1rem 0 !important;
+  width: 64px;
+  text-align: center;
+}
+
+.yellow-line74 {
+  margin: 0 0 1rem 0 !important;
+  width: 74px;
+  text-align: center;
+}
+
+.yellow-line178 {
+  margin: 0 0 1rem 0 !important;
+  width: 178px;
+  text-align: center;
+}
+
+/* ======== Visitanos ======== */
+
+.visitanos {
+  margin: 0 1rem;
+}
+
+iframe {
+  margin-bottom: 2rem;
+  width: 100%;
+  height: 9rem;
+}
+
+.direccion {
+  width: 8.438rem;
+  font-size: 12px;
+}
+
+.visitanos .horario {
+  width: 5.625rem;
+  font-size: 12px;
+}
+
+.navbar-toggler {
+  top: 5%;
+  left: 90%;
+}
+
+/* ======== small ======== */
+@media (min-width: 420px) {
+  .contenedor-logo {
+    min-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .heroImageComponent {
+    width: 8.5rem;
+    /* content: url("../img-proyecto/heroImageComponent.png") !important; */
+    padding-bottom: 2rem !important;
+  }
+
+  .contenedor-texto {
+    background-image: url("../img-proyecto/heroImage420.png");
+    background-size: auto;
+    min-height: 250px;
+  }
+
+  .hero-image-opacity {
+    display: grid;
+    grid-template-areas:
+      "imagen texto"
+      "imagen texto";
+    grid-template-rows: 1fr;
+    grid-template-columns: 35.5% 1fr !important;
+    min-height: 13.875rem;
+  }
+
+  .navbar-toggler {
+    top: 5%;
+    left: 90%;
+  }
+
+  iframe {
+    width: 100%;
+    height: 200px;
+  }
+
+  .visitanos .horario {
+    width: 120px;
+    font-size: 0.9rem;
+  }
+  .direccion {
+    width: 160px;
+    font-size: 0.9rem;
+  }
+
+  /*  */
+  .hero-image-title {
+    font-size: 2.3rem;
+  }
+
+  #inicio {
+    position: relative;
+  }
+
+  .hero-image-content {
+    position: absolute;
+    right: 67.5%;
+    bottom: 23%;
+  }
+
+  .contenedor-logo {
+    /* background-color: #c59d62; */
+    /* background-image: url() !important; */
+  }
+}
+
+@media (min-width: 500px) {
+  .heroImageComponent {
+    width: 10rem;
+  }
+
+  .hero-image-title {
+    font-size: 2.9rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .contenedor-texto {
+    background-image: url("../img-proyecto/heroImage600.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    min-height: 250px;
+  }
+  .heroImageComponent {
+    width: 11rem;
+  }
+
+  .hero-image-title {
+    font-size: 3.1rem;
+  }
+
+  .hero-image-opacity {
+    width: 100%;
+    min-height: 300px;
+  }
+  .contenedor-logo {
+    min-height: 300px;
+  }
+
+  .contenedor-texto {
+    min-height: 300px;
+  }
+
+  .navbar-toggler {
+    top: 5%;
+    left: 94%;
+  }
+}
+
+/* ======== tablet ======== */
+@media (min-width: 736px) {
+  .contenedor-texto {
+    background-image: url("../img-proyecto/heroImage736.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    min-height: 400px;
+  }
+
+  .navbar-toggler {
+    top: 5%;
+    left: 93%;
+  }
+
+  /* inicio */
+
+  .hero-image {
+    background-attachment: fixed;
+  }
+
+  .hero-image-opacity {
+    width: 100%;
+    min-height: 400px;
+  }
+
+  .contenedor-logo {
+    min-height: 400px;
+  }
+
+  .hero-image-title {
+    font-size: 6rem;
+    width: 480px;
+  }
+
+  /*  Quienes somos  */
+  .quienes-somos {
+    margin: 0 2rem;
+  }
+  .quienes-somos h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1 !important;
+  }
+
+  .quienes-somos p {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  /* Servicios */
+
+  .contenedor-servicios-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .servicios {
+    margin: 0 2rem;
+    text-align: center;
+  }
+  .servicios h2 {
+    margin-bottom: 1rem;
+  }
+  .servicios h3 {
+    font-size: 1.15rem !important;
+    margin-bottom: 0rem;
+  }
+
+  .contenedor-servicios {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .servicios p {
+    width: 192px;
+    text-align: center;
+    margin: 0 auto 1rem auto;
+    font-size: 1rem;
+  }
+
+  /* visitanos */
+
+  .visitanos {
+    margin: 0 2rem;
+  }
+
+  iframe {
+    width: 70%;
+    height: 285px;
+    float: right;
+  }
+
+  /* lineas */
+  .line-first {
+    height: 4px;
+  }
+
+  .line {
+    height: 4px;
+  }
+
+  /*  */
+  .hero-image-title {
+    font-size: 3.55rem;
+  }
+
+  #inicio {
+    position: relative;
+  }
+
+  .hero-image-content {
+    position: absolute;
+    right: 67.5%;
+    bottom: 23%;
+  }
+
+  .heroImageComponent {
+    width: 15rem;
+  }
+
+  .navbar-toggler {
+    top: 5%;
+    left: 95%;
+  }
+}
+
+@media (min-width: 860px) {
+  .contenedor-texto {
+    background-image: url("../img-proyecto/heroImage800.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  .hero-image-title {
+    font-size: 4rem;
+  }
+  .heroImageComponent {
+    width: 16rem !important;
+  }
+}
+
+/* ======== desktop ======== */
+@media (min-width: 1024px) {
+  .contenedor-texto {
+    background-image: url("../img-proyecto/heroImage1024.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    min-height: 560px;
+  }
+  .hero-image-opacity {
+    width: 100%;
+    min-height: 560px;
+  }
+
+  .contenedor-logo {
+    min-height: 560px;
+  }
+
+  .hero-image-title {
+    font-size: 7rem;
+    width: 850px;
+  }
+
+  .quienes-somos {
+    margin: 0 5rem;
+  }
+  .quienes-somos h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.1rem;
+  }
+
+  .quienes-somos p {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .servicios h2 {
+    font-size: 2.1rem;
+  }
+  .servicios h3 {
+    font-size: 1.4rem !important;
+  }
+
+  .check {
+    width: 244px;
+    height: 235px;
+    margin-bottom: 1rem;
+  }
+  .yellow-line64 {
+    width: 80px;
+  }
+
+  .yellow-line74 {
+    width: 100px;
+  }
+
+  .yellow-line178 {
+    width: 100px;
+    height: 0.27rem;
+  }
+
+  .servicios p {
+    width: 256px;
+    font-size: 1.4rem;
+  }
+
+  .visitanos {
+    margin: 0 4rem;
+  }
+
+  iframe {
+    width: 668px;
+    height: 22.75rem;
+  }
+
+  .direccion {
+    width: 194.07px;
+    font-size: 1.1rem;
+  }
+
+  .visitanos .horario {
+    width: 110.29px;
+    font-size: 20px;
+  }
+  .seccion-visitanos {
+    margin-top: 3rem;
+  }
+  .seccion-horario {
+    margin-bottom: 4rem;
+  }
+
+  .contenedor-servicios {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2rem;
+  }
+
+  /*  */
+  .hero-image-title {
+    font-size: 4.55rem;
+    width: 500px;
+  }
+
+  #inicio {
+    position: relative;
+  }
+
+  .hero-image-content {
+    position: absolute;
+    right: 69.5%;
+    bottom: 23%;
+  }
+
+  .heroImageComponent {
+    width: 20rem !important;
+  }
+}
+/* ======== desktop 1280px ======== */
+@media (min-width: 1280px) {
+  .contenedor-texto {
+    background-image: url("../img-proyecto/heroImage1280.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    min-height: 610px !important;
+  }
+  .hero-image-opacity {
+    width: 100%;
+    min-height: 610px;
+  }
+
+  .contenedor-logo {
+    min-height: 610px;
+  }
+
+  .hero-image-title {
+    font-size: 6.55rem;
+    width: 530px;
+  }
+
+  .quienes-somos {
+    margin: 0 6rem;
+  }
+  .quienes-somos h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.375rem;
+  }
+
+  .quienes-somos p {
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .servicios h2 {
+    font-size: 2.375rem;
+  }
+  .servicios h3 {
+    font-size: 1.75rem !important;
+  }
+
+  .check {
+    width: 264.94px;
+    height: 255px;
+    margin-bottom: 1rem;
+  }
+
+  .yellow-line64 {
+    width: 103px;
+  }
+
+  .yellow-line74 {
+    width: 115px;
+  }
+
+  .yellow-line178 {
+    width: 115px;
+    height: 0.3rem;
+  }
+
+  .servicios p {
+    width: 256px;
+    font-size: 1.5rem;
+  }
+
+  .visitanos {
+    margin: 0 6rem;
+  }
+
+  iframe {
+    width: 768px;
+    height: 24.75rem;
+  }
+
+  .direccion {
+    width: 294.07px;
+    font-size: 1.534rem;
+  }
+
+  .visitanos .horario {
+    width: 210.29px;
+    font-size: 24.6429px;
+  }
+  .seccion-visitanos {
+    margin-top: 3rem;
+  }
+  .seccion-horario {
+    margin-bottom: 4rem;
+  }
+
+  .contenedor-servicios {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 6rem;
+  }
+
+  /*  */
+
+  #inicio {
+    position: relative;
+  }
+
+  .hero-image-content {
+    position: absolute;
+    right: 69.5%;
+    bottom: 16%;
+  }
+
+  .heroImageComponent {
+    width: 25rem !important;
+  }
+}
